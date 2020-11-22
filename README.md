@@ -1,34 +1,32 @@
-[![构建状态](/badges/t-nodejs-ec2/build.svg)](/p/t-nodejs-ec2/ci/job)
+# AIHOME_WEB
 
-[TOC]
+AIHOME_WEB 前端源码
 
-# 体验示例项目
+#### Build Setup
+``` bash
+# 配置镜像加速
+https://www.ydyno.com/archives/1219.html
 
-这个示例代码可以帮你快速了解一个简单的 Node.js 网页应用。并已经配置好自动编译过程。
+# 安装依赖
+npm install
 
-文件解释
------------
+# 启动服务 localhost:8013
+npm run dev
 
-样例包括:
+# 构建生产环境
+npm run build:prod
+```
 
-* README.md - 本文件
-* Jenkinsfile - 用以自动构建和测试的脚本
-* Dockerfile - 用以自动构建 Docker 镜像的脚本
-* package.json - npm 的包管理文件
-* app.js - 主 Nodejs 服务器端源代码
-* tests - 主测试代码
+#### 常见问题
 
-快速开始
----------------
+1、linux 系统在安装依赖的时候会出现 node-sass 无法安装的问题
 
-如下这些引导，假定你想在自己的电脑上开发本项目。
+解决方案：
+```
+1. 单独安装：npm install --unsafe-perm node-sass 
+2. 直接使用：npm install --unsafe-perm
+```
 
-1. 安装依赖
+2、加速node-sass安装
 
-        $ npm install
-
-2. 启动服务器
-
-        $ npm start
-
-5. 打开 http://127.0.0.1:3000/ .
+https://www.ydyno.com/archives/1219.html
